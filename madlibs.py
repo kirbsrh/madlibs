@@ -61,9 +61,12 @@ def play_madlibs():
     color = request.args.get("color")
     noun = request.args.get("noun")
     adjective = request.args.get("adjective")
+    box = request.args.get("box")
+    cat_call = request.args.get("cat_call")
+    madlib_choice =choice(["madlib_game.html", "madlib_game2.html", "madlib_game3.html"])
 
 
-    return render_template("madlib_game.html", person=name, color=color, noun=noun, adjective=adjective)        
+    return render_template(madlib_choice, person=name, color=color, noun=noun, adjective=adjective, box=box, cat_call=cat_call)        
 
 
 

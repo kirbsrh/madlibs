@@ -1,11 +1,7 @@
-<!doctype html>
-<html>
-  <head>
-      <title>Your Madlib!</title>
-  </head>
-  <body>
-    There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
-When {{ person }} went to pick it up, it burst into flames in a totally
-{{ adjective }} way.
-  </body>
-</html>
+{% extends 'base.html' %}
+   
+{% block h1%}Your mad, mad, lib.{% endblock %}
+
+   {% block body %} There once was a {{ color }} {{ noun }} sitting in the {{ cat_call }} cat lab.
+When {{ person }} went to {{ box }} it up, it burst into flames in a totally
+{{ adjective }} way. {% endblock %}
